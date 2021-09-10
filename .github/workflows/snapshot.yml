@@ -17,7 +17,6 @@ env:
   DOCUMENT_METADATA_AUTHOR:     'CIP4 Organization'
   DOCUMENT_METADATA_KEYWORDS:   'Automation;CIM;CIP4;Graphic Arts;Graphics;Interface;Printing;Specification;Standard;Workflow;XML'
 
-
   BUILD_UTILITY_EXE: c:\actions-runner\_work\_tool\document-processing\document-processing.exe  
 
 ## The remaining section SHOULD be common to all draft documentation builds
@@ -86,7 +85,7 @@ jobs:
         run: >
           ${{ env.BUILD_UTILITY_EXE }} info "$env:DOCUMENT_COVER_TITLE*.pdf"
           --copyright "$((Get-Date).ToString('MMMM yyyy')) $env:DOCUMENT_METADATA_COPYRIGHT"
-          --title     "$env:DOCUMENT_METADATA_TITLE Draft $((Get-Date).ToString('yyyyMMdd')) Build-$env:GITHUB_RUN_NUMBER" 
+          --title     "$env:DOCUMENT_METADATA_TITLE $env:DOCUMENT_VERSION Draft $((Get-Date).ToString('yyyyMMdd')) Build-$env:GITHUB_RUN_NUMBER" 
           --subject   "$env:DOCUMENT_METADATA_SUBJECT"
           --author    "$env:DOCUMENT_METADATA_AUTHOR"
           --keywords  "$env:DOCUMENT_METADATA_KEYWORDS"
