@@ -11,7 +11,7 @@ env:
   DOCUMENT_COVER_TITLE: Messaging ICS
   CONFIG_FILE:          Build\ICS_JDF_Messaging.ini
   CONFLUENCE_ID:        '1560313992'
-  CONFLUENCE_LABELS:    'ics-jdf-Messaging,milestone'
+  CONFLUENCE_LABELS:    'ics-jdf-messaging,milestone'
   
   DOCUMENT_METADATA_COPYRIGHT:  'CIP4 Organization, all rights reserved'
   DOCUMENT_METADATA_TITLE:      'Messaging ICS'
