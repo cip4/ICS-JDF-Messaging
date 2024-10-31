@@ -4,10 +4,10 @@
 
 name: Draft Release Build
 ## This section contains ALL variable specific for this project ##
-# The VERSION is the main release number i.e. 1.8
+# The VERSION is the main release number i.e. 1.9
 env:
   BUILD_NAME:           ICS-JDF-MESSAGING
-  DOCUMENT_VERSION:     '1.8'
+  DOCUMENT_VERSION:     '1.9'
   DOCUMENT_COVER_TITLE: Messaging ICS
   CONFIG_FILE:          Build\ICS_JDF_Messaging.ini
   CONFLUENCE_ID:        '1560313992'
